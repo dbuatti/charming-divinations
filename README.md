@@ -4,10 +4,17 @@ Public site for **Charming Divinations**, the practice of **Linda Webster**.
 
 | Item | Value |
 |------|-------|
-| **Live** | https://charmingdivinations.vercel.app |
-| **Alt** | https://charming-divinations.vercel.app |
+| **Live (Netlify)** | https://charming-divinations.netlify.app |
+| **Mirror (Vercel)** | https://charmingdivinations.vercel.app |
 | **GitHub** | https://github.com/dbuatti/charming-divinations |
+| **Netlify** | https://app.netlify.com/projects/charming-divinations |
 | **Vercel** | https://vercel.com/daniele-buattis-projects/charming-divinations |
+
+### Why two hosts
+Vercel's Hobby tier caps deployments at **100 per day for the whole account**, and
+the account is shared with several other active projects. Netlify has no such cap,
+so **Netlify is the primary** and GitHub Actions deploys to it on every push.
+Vercel is kept as a mirror and will catch up whenever quota allows.
 
 ---
 
@@ -109,12 +116,19 @@ landing-page/
 ```bash
 git add -A
 git commit -m "update"
-git push origin main     # auto-deploys, ~60s
+git push origin main     # → GitHub Actions → Netlify, ~60s
 ```
 
-Vercel's free tier caps deployments at 100/day **per account**. If you hit
-*"Resource is limited — try again in 24 hours"*, wait for the UTC day to roll over
-(00:00 UTC = 10:00am AEDT) and push again. Use `git push`, not `vercel --prod`.
+Or manually:
+
+```bash
+netlify deploy --prod --dir=.
+```
+
+Vercel mirror (rate-limited, optional):
+```bash
+vercel --prod
+```
 
 ---
 
