@@ -68,8 +68,6 @@ for web, but an SVG master would be sharper at large sizes.
 **Only claim what is verified.** See `../FACTS.md`.
 
 ✅ Confirmed about Linda:
-- Kinesiology training at the College of Complimentary Medicine — client intake
-  assessment, practical balances, clinical case study
 - Founder and lead teacher, Council of the Root
 - Creator, The Basically Brilliant Beginner
 - Reads for people
@@ -77,6 +75,7 @@ for web, but an SVG master would be sharper at large sizes.
   in other forms, basic witchcraft, crystal work, meeting guides
 
 ❌ Do not claim:
+- Kinesiology training or practice — **that is Daniele's**
 - MTTC / CPD certification — **that is Daniele's**
 - Any specific number of years practising
 - Any named qualification not confirmed by Linda
@@ -134,7 +133,8 @@ vercel --prod
 
 ## Still to add
 
-- [ ] Portrait of Linda
+- [ ] Portrait of Linda — a circular slot is in place at `assets/portrait.png`;
+      drop a square photo over it and it crops to the circle automatically
 - [ ] Year Linda began practising
 - [ ] Any further qualifications she holds
 - [ ] Fees for readings, castings, courses, sessions
