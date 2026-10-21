@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal | Charming Divinations</title>
+<meta name="description" content="Notes from the practice — on mindfulness, the elements, and working with the body.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="nav__inner">
+    <a href="/" class="nav__brand">
+      <svg class="nav__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/>
+        <circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+      </svg>
+      <span>
+        <span class="nav__name">Charming Divinations</span>
+        <span class="nav__tag">Linda Webster</span>
+      </span>
+    </a>
+    <div class="nav__links">
+      <a href="/pages/about.html" class="nav__link">About</a>
+      <a href="/pages/offer.html" class="nav__link">What I Offer</a>
+      <a href="/pages/council.html" class="nav__link">Council of the Root</a>
+      <a href="/pages/journal.html" class="nav__link nav__link--active">Journal</a>
+      <a href="/pages/contact.html" class="nav__link">Contact</a>
+      <a href="/pages/contact.html#book" class="btn btn--primary btn--sm">Book a Session</a>
+    </div>
+    <button class="nav__toggle" aria-expanded="false" aria-label="Menu" aria-controls="nav-links"><i></i><i></i><i></i></button>
+  </div>
+</nav>
+
+<header class="phero">
+  <div class="phero__wash" aria-hidden="true"></div>
+  <div class="container">
+    <div class="phero__inner">
+      <p class="phero__crumbs"><a href="/">Home</a> / Journal</p>
+      <p class="eyebrow">Journal</p>
+      <h1 class="phero__title">Notes from the practice</h1>
+      <p class="phero__lede">
+        Occasional writing — on attention, on the elements, on what the body is saying.
+        Written when there is something worth saying.
+      </p>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="journal">
+
+      <article class="post reveal">
+        <div class="post__body">
+          <p class="post__date">21 October 2026 · Council</p>
+          <h2 class="post__title">On swimming against the current</h2>
+          <p class="post__excerpt">
+            The first Council session was about water, and about the Sedna myth — the
+            warning that some currents will drown you if you insist on fighting them.
+            A note on relinquishing control, and what that is not the same as as giving up.
+          </p>
+          <a href="/pages/council.html" class="post__more">Read the session notes →</a>
+        </div>
+      </article>
+
+      <article class="post post--placeholder reveal">
+        <div class="post__body">
+          <p class="post__date">—</p>
+          <h2 class="post__title">A note on protection</h2>
+          <p class="post__excerpt">
+            Grounding, shielding, clearing — and why the second module of the beginner
+            course comes before the third. On why people need to feel safe before they
+            can be asked to do anything difficult.
+          </p>
+          <span class="post__more" style="color:var(--ink-faint);">Awaiting writing →</span>
+        </div>
+      </article>
+
+      <article class="post post--placeholder reveal">
+        <div class="post__body">
+          <p class="post__date">—</p>
+          <h2 class="post__title">The body and the question</h2>
+          <p class="post__excerpt">
+            What an intake actually is: not a form, but a careful reading of someone's
+            history, symptoms and baselines — and an honest account of what you are not
+            going to attempt.
+          </p>
+          <span class="post__more" style="color:var(--ink-faint);">Awaiting writing →</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="notice" style="max-width:640px; margin:var(--s8) auto 0;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <span>
+        <strong>Only the first entry is written.</strong> The other two are placeholders
+        showing the format — the titles are topics Linda has already spoken about, but
+        the writing is hers to do. Nothing here has been written on her behalf.
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- MAILING LIST -->
+<section class="section section--tint">
+  <div class="container">
+    <div class="section__head section__head--center" style="margin-bottom:var(--s6)">
+      <p class="eyebrow">Stay close</p>
+      <h2 class="section__title">Get the next one</h2>
+      <p class="section__lede">One letter at a time, when there's something worth sending.</p>
+    </div>
+    <form class="form" style="max-width:520px; margin:0 auto;" onsubmit="event.preventDefault(); handleSubscribe(this);">
+      <div class="form__row">
+        <input class="input" type="email" placeholder="your@email.com" aria-label="Email address" required>
+        <button class="btn btn--primary" type="submit">Subscribe</button>
+      </div>
+      <p class="form__note" data-form-note>Unsubscribe whenever.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <svg class="footer__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/><circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="footer__name">Charming Divinations</span>
+        </div>
+        <p class="footer__tagline">The practice of Linda Webster. Courses, elemental ritual circles, readings, and natural health.</p>
+      </div>
+      <div>
+        <h4 class="footer__title">Practice</h4>
+        <ul class="footer__list">
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/offer.html">What I Offer</a></li>
+          <li><a href="/pages/council.html">Council of the Root</a></li>
+          <li><a href="/pages/journal.html">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Get in touch</h4>
+        <ul class="footer__list">
+          <li><a href="/pages/contact.html">Contact &amp; booking</a></li>
+          <li><a href="mailto:hello@charmingdivinations.com">hello@charmingdivinations.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Charming Divinations. All rights reserved.</p>
+      <p>Designed &amp; built by Daniele Buatti</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

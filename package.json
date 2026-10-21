@@ -1,0 +1,12 @@
+{
+  "name": "charming-divinations",
+  "version": "1.0.0",
+  "description": "Charming Divinations - Linda Webster. Mindfulness, elemental practice, and natural health.",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "build": "echo 'Static site - no build required'"
+  },
+  "author": "Daniele Buatti",
+  "license": "UNLICENSED"
+}

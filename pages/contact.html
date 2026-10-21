@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking | Charming Divinations</title>
+<meta name="description" content="Book a reading, a kinesiology session, or a place in the Council of the Root with Linda Webster.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="nav__inner">
+    <a href="/" class="nav__brand">
+      <svg class="nav__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/>
+        <circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+      </svg>
+      <span>
+        <span class="nav__name">Charming Divinations</span>
+        <span class="nav__tag">Linda Webster</span>
+      </span>
+    </a>
+    <div class="nav__links">
+      <a href="/pages/about.html" class="nav__link">About</a>
+      <a href="/pages/offer.html" class="nav__link">What I Offer</a>
+      <a href="/pages/council.html" class="nav__link">Council of the Root</a>
+      <a href="/pages/journal.html" class="nav__link">Journal</a>
+      <a href="/pages/contact.html" class="nav__link nav__link--active">Contact</a>
+      <a href="/pages/contact.html#book" class="btn btn--primary btn--sm">Book a Session</a>
+    </div>
+    <button class="nav__toggle" aria-expanded="false" aria-label="Menu" aria-controls="nav-links"><i></i><i></i><i></i></button>
+  </div>
+</nav>
+
+<header class="phero">
+  <div class="phero__wash" aria-hidden="true"></div>
+  <div class="container">
+    <div class="phero__inner">
+      <p class="phero__crumbs"><a href="/">Home</a> / Contact</p>
+      <p class="eyebrow">Contact</p>
+      <h1 class="phero__title">Get in touch</h1>
+      <p class="phero__lede">
+        Book a reading, arrange a session, or ask when the next Council circle opens.
+        The mailing list is the easiest way to stay in the loop.
+      </p>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="book" style="scroll-margin-top:var(--header-h)">
+  <div class="container">
+    <div class="split">
+      <div>
+        <h2 class="section__title" style="text-align:left; font-size:2rem;">Book a session</h2>
+        <p class="section__lede" style="margin:var(--s4) 0 var(--s6)">
+          Tell me what you're looking for and I'll come back to you with times.
+        </p>
+
+        <form class="form" style="max-width:560px;" onsubmit="event.preventDefault(); handleSubscribe(this);">
+          <div class="form__row">
+            <input class="input" type="text" placeholder="Your name" aria-label="Your name" required>
+            <input class="input" type="email" placeholder="your@email.com" aria-label="Email address" required>
+          </div>
+          <select class="input" aria-label="What would you like to book?">
+            <option>What would you like to book?</option>
+            <option>A reading</option>
+            <option>A kinesiology session</option>
+            <option>A place in the Council of the Root</option>
+            <option>The Basically Brilliant Beginner</option>
+            <option>A mindfulness course</option>
+            <option>Something else</option>
+          </select>
+          <textarea class="input" rows="5" placeholder="Tell me a little about what you need — as much or as little as you like." aria-label="Your message"></textarea>
+          <button class="btn btn--primary" type="submit">Send enquiry</button>
+          <p class="form__note" data-form-note>Nothing is sent yet — this form needs connecting to a real inbox.</p>
+        </form>
+
+        <div class="notice">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span>
+            <strong>The form is a demonstration.</strong> It shows what a booking form
+            can do, but it is not connected to an inbox yet. The next step is a live
+            booking link — Cal.com, or a form service like Formspree.
+          </span>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card" style="margin-bottom:var(--s4);">
+          <p class="eyebrow" style="margin-bottom:var(--s3)">Direct</p>
+          <h3 class="card__title" style="margin-bottom:var(--s3)">Email</h3>
+          <p class="card__text" style="margin-bottom:var(--s4)">
+            <a href="mailto:hello@charmingdivinations.com" style="color:var(--accent-deep); text-decoration:underline; text-underline-offset:3px;">hello@charmingdivinations.com</a>
+          </p>
+          <p class="form__note">
+            Enquiries are answered personally. Allow a few days.
+          </p>
+        </div>
+
+        <div class="card" style="margin-bottom:var(--s4);">
+          <p class="eyebrow" style="margin-bottom:var(--s3)">Where</p>
+          <h3 class="card__title" style="margin-bottom:var(--s3)">In person &amp; online</h3>
+          <p class="card__text">
+            Sessions and readings can be held online, or in person in the Byron area.
+            Council circles are online, and are recorded so you can revisit the
+            meditation afterwards.
+          </p>
+        </div>
+
+        <div class="card" style="margin-bottom:var(--s4); background:var(--forest-wash); border-color:var(--forest);">
+          <p class="eyebrow" style="margin-bottom:var(--s3); color:var(--forest)">Mailing list</p>
+          <h3 class="card__title" style="margin-bottom:var(--s3)">Hear when things open</h3>
+          <p class="card__text" style="margin-bottom:var(--s4)">
+            New Council dates, new course intakes, and the occasional letter from
+            the practice.
+          </p>
+          <form class="form" onsubmit="event.preventDefault(); handleSubscribe(this);">
+            <div class="form__row">
+              <input class="input" type="email" placeholder="your@email.com" aria-label="Email address" required>
+              <button class="btn btn--forest" type="submit">Join</button>
+            </div>
+            <p class="form__note" data-form-note>One letter at a time.</p>
+          </form>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow" style="margin-bottom:var(--s3)">The people behind the practice</p>
+          <div style="display:flex; flex-direction:column; gap:var(--s4);">
+            <div>
+              <h4 style="font-family:var(--sans); font-size:0.95rem; font-weight:600;">Linda Webster</h4>
+              <p class="card__text">The practice. Teacher of the Council of the Root, and creator of the Basically Brilliant Beginner.</p>
+            </div>
+            <div>
+              <h4 style="font-family:var(--sans); font-size:0.95rem; font-weight:600;">Daniele Buatti</h4>
+              <p class="card__text">MTTC &amp; CPD-certified mindfulness teacher. Composes the original elemental music, and builds the site and the recording system.</p>
+            </div>
+            <div>
+              <h4 style="font-family:var(--sans); font-size:0.95rem; font-weight:600;">Bradley Dylan</h4>
+              <p class="card__text">Personal and singing coach; Level 3 Organisational Coach (IECL). Co-teacher and session host.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--bg-alt);">
+  <div class="container" style="padding:var(--s10) var(--pad);">
+    <div class="section__head section__head--center">
+      <p class="eyebrow">Before you write</p>
+      <h2 class="section__title">Common questions</h2>
+    </div>
+    <div class="cards" style="max-width:900px; margin:0 auto;">
+      <div class="card">
+        <h3 class="card__title">What if I don't know what I need?</h3>
+        <p class="card__text">
+          That is the most common place to start. Describe what's happening and we'll
+          work out the shape of the session together.
+        </p>
+      </div>
+      <div class="card">
+        <h3 class="card__title">Are sessions recorded?</h3>
+        <p class="card__text">
+          Council circles are recorded, so you can revisit the guided meditation.
+          One-to-one sessions are not, unless you ask for that.
+        </p>
+      </div>
+      <div class="card">
+        <h3 class="card__title">What if a teaching doesn't fit me?</h3>
+        <p class="card__text">
+          Then it isn't yours to take on. Linda's own position is that you should
+          leave behind anything that feels uncomfortable — and that choosing your own
+          path is the whole point.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <svg class="footer__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/><circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="footer__name">Charming Divinations</span>
+        </div>
+        <p class="footer__tagline">The practice of Linda Webster. Courses, elemental ritual circles, readings, and natural health.</p>
+      </div>
+      <div>
+        <h4 class="footer__title">Practice</h4>
+        <ul class="footer__list">
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/offer.html">What I Offer</a></li>
+          <li><a href="/pages/council.html">Council of the Root</a></li>
+          <li><a href="/pages/journal.html">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Get in touch</h4>
+        <ul class="footer__list">
+          <li><a href="/pages/contact.html">Contact &amp; booking</a></li>
+          <li><a href="mailto:hello@charmingdivinations.com">hello@charmingdivinations.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Charming Divinations. All rights reserved.</p>
+      <p>Designed &amp; built by Daniele Buatti</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
