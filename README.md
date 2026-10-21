@@ -16,6 +16,10 @@ the account is shared with several other active projects. Netlify has no such ca
 so **Netlify is the primary** and GitHub Actions deploys to it on every push.
 Vercel is kept as a mirror and will catch up whenever quota allows.
 
+> **The Vercel git integration for this project is now disconnected**, so pushing to
+> GitHub will not consume any Vercel deployments. The Vercel mirror is refreshed
+> manually with `vercel --prod` when the account has quota to spare.
+
 ---
 
 ## Brand identity
